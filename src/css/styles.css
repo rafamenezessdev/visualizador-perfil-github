@@ -190,6 +190,35 @@ main {
   margin-top: var(--spacing-xl);
 }
 
+.profile-conuters {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin: 80px 0;
+}
+
+.profile-conuters > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 120px;
+}
+
+.profile-conuters h4 {
+  font-weight: normal;
+  font-size: 0.75rem;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.profile-conuters span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 @media (max-width: 480px) {
   .profile-card {
     gap: var(--spacing-md);
