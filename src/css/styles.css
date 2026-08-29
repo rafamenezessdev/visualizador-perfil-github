@@ -219,6 +219,75 @@ main {
   font-weight: bold;
 }
 
+.profile-repositories {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.profile-repositories h2 {
+  font-size: clamp(1.5rem, 2vw, 2.2rem);
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  text-align: center;
+  color: #111827;
+}
+
+.repositories {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.repository-card {
+  background: #f9fafb;
+  border: 1px solid #dfe3e8;
+  border-radius: 0.75rem;
+  padding: 1.1rem 1rem;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 170px;
+}
+
+.repository-card h3 {
+  width: 100%;
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.repository-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: 100%;
+}
+
+.repository-stats span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #e5e7eb;
+  color: #111827;
+  border-radius: 999px;
+  padding: 0.45rem 0.7rem;
+  font-size: 0.8rem;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .repositories {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 480px) {
   .profile-card {
     gap: var(--spacing-md);
